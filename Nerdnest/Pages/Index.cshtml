@@ -1,10 +1,191 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Online school";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="main-board container-fluid">
+    <a asp-page="Index">
+        <img class="logo" src="/assets/logo.png" alt="Logo" />
+    </a>
+    <div class="container col-md-6">
+            
+         <div class="input-group-sm search">
+             <input type="search" class="col-md-10" id="searc" placeholder="Search" name="search">
+             <button class="cta">
+                    <span class="hover-underline-animation"> 
+                    <i class="fa-1x fa-brands fa-searchengin"></i>
+                 </span>
+             </button>
+          </div>
+        
+        <div class="btn-group">
+            <button type="button" class="btn btn-secondary">University</button>
+            <button type="button" class="btn btn-secondary">Faculties</button>
+            <button type="button" class="btn btn-secondary">Educational programs</button>
+        </div>
+    </div>
+    
+    <span class="d-flex justify-content-between login">
+
+        <a asp-page="LogIn">
+            <i class="fa-3x fa-solid fa-right-to-bracket"></i>
+            Log-in
+        </a>
+        <span class="lang">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                    <i class="fa-1x fa-solid fa-earth-americas"></i>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Turkçe</a></li>
+                </ul>
+            </div>
+        </span>
+
+    </span>
+
 </div>
+
+
+<div class="layer">
+    <div>
+        <table class="container">
+            <tr>
+                <td><button type="button" class="btn btn-warning">Groups</button></td>
+                <td><button type="button" class="btn btn-warning">Courses</button></td>
+                <td><button type="button" class="btn btn-warning">Tutors</button></td>
+                <td><button type="button" class="btn btn-warning">Programming</button></td>
+                <td><button type="button" class="btn btn-warning">Tarifs</button></td>
+                <td><button type="button" class="btn btn-warning">F.A.Q</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="image container">
+    <img src="~/assets/board-knowledge.jpeg" width="100%" height="500" />
+</div>
+<div class="bodypart">
+    <p>Choose activities for your goal <i class="fa-solid fa-arrow-down-short-wide"></i> </p>
+    
+    <div class="menu">
+        <table class="container">
+            <tr>
+                <th style="width:3%">
+                    <p>
+                        A.I  
+                    </p>
+                    <a asp-page="Index">
+                        Learn more 
+                        <span><i class="fa-2x fa-solid fa-square-arrow-up-right"></i></span>
+                    </a>
+                </th>
+                <th class="spacing"></th>
+                <th style="width:3%">
+                    <p>
+                        C/C++
+                    </p>
+                    <a asp-page="Index">
+                        Learn more
+                        <span><i class="fa-2x fa-solid fa-square-arrow-up-right"></i></span>
+                    </a>
+                </th>
+                <th class="spacing"></th>
+                <th>
+                    <p>
+                        Physic's
+                    </p>
+                    <a asp-page="Index">
+                        Learn more
+                        <span><i class="fa-2x fa-solid fa-square-arrow-up-right"></i></span>
+                    </a>
+                </th>
+                <th class="spacing"></th>
+                <th>
+                    <p>
+                        Calculus
+                    </p>
+                    <a asp-page="Index">
+                        Learn more
+                        <span><i class="fa-2x fa-solid fa-square-arrow-up-right"></i></span>
+                    </a>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="text container">
+        <b>We know how to teach.</b>
+        <p>
+            Our proffesors will tell you how to prepare for exams, help you cope with difficult tasks and win the Olympiad. They will tell you about the pifalls of exams and the most common mistakes, and explain how to avoid them.
+        </p>
+    </div>
+   
+
+    <div class="proffessors">
+        <table class="container">
+            <tr>
+                <th >
+                    <img src="~/assets/walterprof.png" width="250" />
+                </th>
+                <th></th>
+                <th>
+                    <img src="~/assets/walterprof.png" width="250" />
+                </th>
+                <th></th>
+                <th>
+                    <img src="~/assets/walterprof.png" width="250" />
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <b>
+                        Whalter White
+                    </b>
+                    <p>
+                        His unique approach to teaching is based on a combination of theory and practice, which allows students to quichly master the material and apply it in practice. Walter pays special attention to each student's individual needs, creating a personalized curriculum to achieve their learning goals. Witch its help, you can unlock your potential and achieve success in the world of technolohy!
+                    </p>
+                </th>
+                <th></th>
+                <th>
+                    <b>
+                        Whalter White
+                    </b>
+                    <p>
+                        His unique approach to teaching is based on a combination of theory and practice, which allows students to quichly master the material and apply it in practice. Walter pays special attention to each student's individual needs, creating a personalized curriculum to achieve their learning goals. Witch its help, you can unlock your potential and achieve success in the world of technolohy!
+                    </p>
+                </th>
+                <th></th>
+                <th>
+                    <b>
+                        Whalter White
+                    </b>
+                    <p>
+                        His unique approach to teaching is based on a combination of theory and practice, which allows students to quichly master the material and apply it in practice. Walter pays special attention to each student's individual needs, creating a personalized curriculum to achieve their learning goals. Witch its help, you can unlock your potential and achieve success in the world of technolohy!
+                    </p>
+                </th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+

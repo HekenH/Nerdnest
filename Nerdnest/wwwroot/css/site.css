@@ -18,5 +18,230 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 0px;
+    background-color: #bdb5b3;
+    font-family: 'Cascadia Code'
+}
+
+.main-board {
+    margin: 0px;
+    background-image: url('../assets/board-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    padding: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 10px solid #eed056;
+    height: 180px;
+    display: flex;
+    justify-content: start;
+}
+.boarder{
+    justify-content: space-between;
+}
+.logo{
+   height: 130px;
+   margin-top: 5%;
+   margin-left: 10%;
+   padding: 0px;
+}
+.container-fluid {
+    padding: 0px;
+    
+}
+
+/*Layer under the board*/
+
+.layer {
+    align-items: center;
+    height: 60px;
+    background-color: #cd4b57;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+.btn-warning {
+    font-family: 'Cascadia Code';
+    width: 160px;
+    font-size: 17px
+}
+
+/*Buttons under input form*/
+
+.btn-secondary {
+    border: solid #ffc107;
+    border-radius: 25px;
+}
+.btn-group {
+    width: 600px;
+    height: 60px;
+    padding-top: 2%;
+    margin-bottom: 1%;
+    margin-left: 30%;
+    font-family: 'Cascadia Code';
+    border-collapse: collapse;
+}
+
+/*Input form*/
+
+.search {
+    border: none;
+    outline: none;
+    margin-left: 20%;
+    margin-top: 65px;
+    border: solid #ffc107;
+    border-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: white;
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 12px;
+    padding-right: 0px;
+}
+input {
+    border: none;
+    outline: none;
+    height: 25px;
+    color: #5a5858;
+    font-family: 'Cascadia Code';
+    justify-items: center;
+    background-color: none;
+}
+
+
+/*Search Button*/
+.cta {
+    border: none;
+    border-left: solid #ffc107;
+    background: none;
+    cursor: pointer;
+    padding-bottom: 3px;
+    margin: 0px;
+}
+
+    .cta span {
+        padding-bottom: 5px;
+        font-size: 16px;
+        padding-right: 5px;
+        padding-left: 8px;
+        text-transform: uppercase;
+        margin: 0px;
+    }
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 35px;
+}
+
+    .hover-underline-animation:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #000000;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*Log in  */
+
+
+.login {
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-bottom: 0px;
+}
+.login a {
+    margin-bottom: 0px;
+}
+.login ul li{
+    color: white;
+}
+.lang {
+    margin-left: 20%;
+}
+.btn-default {
+    color: darkred;
+}
+.btn-default i {
+    margin-right: 30px;
+}
+
+.dropdown {
+    background-color: #ffc107;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px grey;
+    margin-right: 50px;
+}
+    .dropdown:hover {
+        box-shadow: none;
+        background-color: #b3f5ed;
+        border-radius: 13px;
+    }
+
+/*Under line*/
+
+.image img {
+    border-radius: 15px;
+    border: ridge #ad3131;
+}
+.bodypart {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 25px;
+}
+    .bodypart b {
+        font-size: 35px;
+        text-align: left;
+    }
+
+.menu {
+    height: 150px;
+}
+.menu a{
+    font-size: 15px;
+}
+    .menu th {
+        font-size: 25px;
+        border-radius: 20px;
+        width: 2%;
+        height: 100px;
+    }
+        .menu table th:hover {
+            background-color: #938e8d;
+            width: 2%;
+            height: 5%;
+            box-shadow: 0px 0px 0px 3px #5c5c5c inset;
+            border-radius: 20px;
+        }
+    .menu table .spacing:hover {
+        box-shadow: none;
+        background-color: transparent;
+        border: none;
+        border-radius: 20px;
+    }
+
+.menu .container a {
+    text-decoration: none;
+    color: #212529;
+
+}
+
+.text {
+    margin-top: 60px;
+}
+.proffessors table p {
+    font-size: 15px;
 }
