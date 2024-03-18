@@ -299,12 +299,50 @@ input {
     
 }
 footer {
+    margin: 0px;
     padding-top: 50px;
-    height: 400px;
+    height: 100%;
     background-color: #313131;
     
 }
-    footer .contacts {
-        width: 100%;
-        border-top: white;
+.end {
+    margin-top: 20%;
+    padding-bottom: 35px;
+}
+.contacts {
+    border: #bdb5b3;
+    border: white;
+}
+.contacts th {
+    padding-left: 10px;
+}
+
+
+/*Login part*/
+.loginbackground {
+    background-image: url('../assets/Beykozkampus.jpg');
+    background-size: 100%;
+    height: 800px;
+    margin: auto;;
+}
+
+.plate {
+    top: 50%;
+    left: 50%;
+    transform: translate(4%, 50%);
+    width: 700px;
+    height: 350px;
+    background-color: #c6c6c6be;
+    border: solid darkred;
+    border-radius: 20px;
+}
+.plate input:hover {
+    outline: auto;
+}
+    .plate input {
+        height: 35px;
+        border: solid #ffc107;
+        width: 190px;
+        border-radius: 20px;
+        text-align: center;
     }
