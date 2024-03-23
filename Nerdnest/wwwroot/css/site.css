@@ -17,15 +17,25 @@ html {
   min-height: 100%;
 }
 
+.navbar-right li:hover {
+    outline: none;
+    color: aqua;
+}
+
+
 body {
     margin-bottom: 0px;
-    background-color: #bdb5b3;
+    background-color: #A2A2D0;
     font-family: 'Cascadia Code'
 }
 
+/*table th {
+    border: solid red;
+}*/
+
 .main-board {
     margin: 0px;
-    background-image: url('../assets/board-background.jpg');
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -37,14 +47,11 @@ body {
     display: flex;
     justify-content: start;
 }
+.main-board a {
+
+}
 .boarder{
     justify-content: space-between;
-}
-.logo{
-   height: 130px;
-   margin-top: 5%;
-   margin-left: 10%;
-   padding: 0px;
 }
 .container-fluid {
     padding: 0px;
@@ -56,11 +63,18 @@ body {
 .layer {
     align-items: center;
     height: 60px;
-    background-color: #cd4b57;
+    background-color: #663dff;
+    background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
     font-size: 20px;
     padding: 10px;
-    
+    color: aqua;
 }
+.layer td{
+    width: 230px;
+}
+    .layer .btn {
+        color: #ecc141;
+    }
 .btn-warning {
     font-family: 'Cascadia Code';
     width: 160px;
@@ -78,34 +92,34 @@ body {
     height: 60px;
     padding-top: 2%;
     margin-bottom: 1%;
-    margin-left: 30%;
+    margin-left: 0%;
     font-family: 'Cascadia Code';
     border-collapse: collapse;
 }
+
 
 /*Input form*/
 
 .search {
     border: none;
     outline: none;
-    margin-left: 20%;
+    margin-left: 0%;
     margin-top: 65px;
     border: solid #ffc107;
-    border-radius: 25px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-radius: 10px;
     background-color: white;
     padding: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 12px;
     padding-right: 0px;
+    height: 40px;
 }
 input {
     border: none;
     outline: none;
-    height: 25px;
-    color: #5a5858;
+    height: 35px;
+    color: black;
     font-family: 'Cascadia Code';
     justify-items: center;
     background-color: none;
@@ -124,10 +138,10 @@ input {
 
     .cta span {
         padding-bottom: 5px;
-        font-size: 16px;
+        font-size: 20px;
         padding-right: 5px;
         padding-left: 8px;
-        text-transform: uppercase;
+        text-transform: lowercase;
         margin: 0px;
     }
 
@@ -156,52 +170,38 @@ input {
 }
 
 /*Log in  */
-
-
-.login {
-    margin-top: 1%;
-    margin-left: 15px;
-    margin-bottom: 0px;
-    
-}
-    .login .btn-secondary {
-        margin-bottom: 0px;
-        text-decoration: none;
-        color: #ffc107;
-        height: 85px;
-        padding: auto;
-    }
-.login ul li{
-    color: white;
-}
-.lang {
-    margin-left: 20%;
-}
-.btn-default {
+.dropdown button {
     color: darkred;
 }
-.btn-default i {
-    margin-right: 30px;
-}
-
-.dropdown {
-    margin-top: 20px;
-    background-color: #ffc107;
-    border-radius: 20px;
-    box-shadow: 10px 5px 5px grey;
-    margin-right: 50px;
-}
-    .dropdown:hover {
-        box-shadow: none;
-        background-color: #b3f5ed;
-        border-radius: 13px;
-    }
 
 /*Under line*/
 
-.image img {
-    border-radius: 15px;
-    border: ridge #ad3131;
+.blur-bg {
+    width: 100%;
+    height: 100%; /* Adjust height as needed */
+    position: relative;
+    overflow: hidden;
+}
+    .blur-bg img {
+        position: static;
+    }
+    .blur-bg::before {
+        filter: blur(20px);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(1000px); /* Adjust the blur radius as needed */
+        z-index: -1; /* Ensure the pseudo-element is behind other content */
+        background-image: url('../assets/boarder.jpg');/* Replace 'your-background-image.jpg' with the path to your background image */
+        background-size: cover;
+    }
+
+img {
+    z-index: 2;
+    filter: none !important;
 }
 .bodypart {
     margin-top: 25px;
@@ -214,7 +214,7 @@ input {
     }
 
 .menu {
-    height: 150px;
+    height: 600px;
 }
 .menu a{
     font-size: 15px;
@@ -222,62 +222,46 @@ input {
     .menu th {
         font-size: 25px;
         border-radius: 20px;
-        width: 2%;
-        height: 100px;
+        width: 150px;
+        height: 300px;
+        margin: 25px;
+        /*background-color: red;*/
     }
-        .menu table th:hover {
-            background-color: #938e8d;
-            width: 2%;
-            height: 5%;
-            box-shadow: 0px 0px 0px 3px #5c5c5c inset;
-            border-radius: 20px;
-        }
-    .menu table .spacing:hover {
-        box-shadow: none;
-        background-color: transparent;
-        border: none;
+    .menu table th:hover {
+        width: auto;
+        height: 300px;
+        margin: 25px;
+        background-color: #663dff;
+        background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
         border-radius: 20px;
+        font-size: 35px;
     }
-
+    .menu p, .menu p:hover {
+        justify-content: center;
+        width: 170px;
+        margin-left: 20%;
+        /*background-color: blue;*/
+    }
 .menu .container a {
     text-decoration: none;
     color: #212529;
 
 }
-
-.text {
-    margin-top: 60px;
+.card {
+    background-color: #A2A2D0;
+    margin-top: 20px;
 }
 .proffessors table p {
     font-size: 15px;
 }
+.events .card {
+    border-radius: 25px;
+}
+.events .card:hover {
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 
-.events div {
-    margin-top: 25px;
-    text-wrap: wrap;
-    height: 320px;
-    width: 250px;
-    
-}
-    .events div:hover {
-        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-    }
-    .events div p {
-        margin: 45px;
-        text-align: center;
-        text-wrap: stable;
-        width: 170px;
-        height: 60px;
-    }
-    .events div a {
-        /*margin-bottom: 25px;*/
-    }
-.events .head {
-    
-    text-decoration: underline double;
-}
-.event {
-    margin-top: 35px;
+    border-radius: 25px;
 }
 .consultation {
     background-color: #5ae95d;
@@ -346,3 +330,5 @@ footer {
         border-radius: 20px;
         text-align: center;
     }
+
+    
