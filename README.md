@@ -8,3 +8,7 @@ Kamuran Demirkol
 
 Dr. Demirkol stands as a beacon of educational innovation, combining cutting-edge AI technology with a deep understanding of pedagogy. With a doctoral degree in Educational Psychology and years of experience in AI research, Dr. Aurora has honed her skills to become a master of personalized learning.
 
+Studying AI Promises A Bright Career.
+
+AI and machine learning skills are in high demand across various industries including technology, healthcare, finance, retail, and more. Companies are increasingly adopting AI technologies to gain competitive advantages, leading to a growing need for professionals with expertise in these areas.You could work as a machine learning engineer, data scientist, AI researcher, robotics engineer, natural language processing specialist, or in other specialized roles within the field.
+
