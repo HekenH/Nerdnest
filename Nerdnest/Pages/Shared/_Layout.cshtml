@@ -29,7 +29,7 @@
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="btn btn-default nav-link"><a asp-page="./Login/Index" class="text-light" style="text-decoration: none;"><span class="fa-solid fa-user"></span> Sign Up</a></li>
+                        <li class="btn btn-default nav-link"><a asp-page="./Login/Registration" class="text-light" style="text-decoration: none;"><span class="fa-solid fa-user"></span> Sign Up</a></li>
                         <li class="btn btn-default nav-link"><a asp-page="./Login/Index" class="text-light" style="text-decoration: none;"><span class="fa-solid fa-right-to-bracket"></span> Login</a></li>
                         <li>
                             <div class="dropdown mx-5">
@@ -41,7 +41,7 @@
                                             <li><a class="dropdown-item" href="#">English</a></li>
                                             <li><a class="dropdown-item" href="#">Turkçe</a></li>
                                         </ul>
-                                    </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -49,12 +49,12 @@
         </nav>
     </header>
      <div class="container-fluid">
-        <main role="main" class="pb-3">
+        <main role="main" class="">
             @RenderBody()
         </main>
     </div> 
 
-    <footer class="footer text-muted">
+    <footer class="footer text-muted border-top">
         <div class="container contacts">
             <table>
                 <tr>

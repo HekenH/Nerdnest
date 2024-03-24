@@ -4,24 +4,28 @@
     ViewData["Title"] = "Online school";
 }
 <div class="container-fluid d-flex justify-content-center loginbackground">
-    <div class="container plate">
-        <a asp-page="/Index"><img src="~/assets/logo.png" width="50%" /></a>
-        <div class="btn-group-sm d-flex justify-content-center m-3 mt-4">
-            <a class="btn btn-primary" asp-page="/Login/index">Student</a>
-            <button type="button" class="btn btn-outline-primary">Professor</button>
-        </div>
-        <div class="inputs">
-            <div class="form-group d-flex justify-content-center">
-                <input type="Login" class="col-md-2" id="Login" placeholder="Login" name="login">
-            </div><br />
-
-            <div class="form-group d-flex justify-content-center">
-                <input type="Password" class="col-md-2" id="Password" placeholder="Password" name="password">
-            </div><br />
-            <div class="d-flex justify-content-center">
-                <button class="btn btn-secondary">Enter.</button>
+        <div class="container plate py-5">
+            <p class="text-light d-flex justify-content-center">Login Here</p>
+            <div class="btn-group-sm d-flex justify-content-center m-3 mt-4">
+            <a type="button" asp-page="/Login/Index" class="btn btn-primary">Student</a>
+            <button class="btn btn-outline-primary">Professor</button>
             </div>
-        </div>
+            <div class="container">
+                <form action="/action_page.php">
+                    <label class="text-light" for="fname">Login</label><br />
+                    <input type="text" id="fname" name="firstname" placeholder="Email or Phone">><br />
+
+                    <label class="text-light" for="lname">Password</label><br />
+                    <input type="text" id="lname" name="lastname" placeholder="Password"><br /><br />
+                    <button class="btn btn-danger col-12">Enter</button><br /><br />
+                    <table width="385px">
+                        <tr>
+                            <td><button Response.Redirect "https://www.google.com" class="btn btn-primary col-12"><i class="fa-brands fa-google mx-2"></i>Google</button></td>
+                            <td><button class="btn btn-primary col-10"><i class="fa-brands fa-square-facebook mx-2"></i>Facebook</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
     </div>
 
 

@@ -1,0 +1,53 @@
+﻿@page
+@model Nerdnest.Pages.Login.IndexModel
+@{
+    ViewData["Title"] = "Registration";
+}
+
+<div class="container-fluid d-flex justify-content-center loginbackground">
+    <div class="container registration py-5">
+        <p class="text-light d-flex justify-content-center">Registration</p>
+        <div class="container text-light">
+
+            <input style="width: 49%;" type="text" id="firstname" name="firstname" placeholder="Name">
+            <input style="width: 48%;" type="password" id="lastname" name="lastname" placeholder="Last Name"><br /><br />
+            <select name="Country" style="width: 100%;">
+                <option value="country">Country</option>
+                <option value="Turkiye">Turkiye</option>
+                <option value="England">England</option>
+                <option value="Russia">Russia</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Kirgzistan">Kirgizistan</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Germany">Germany</option>
+                <option value="USA">USA</option>
+            </select>
+            <br /><br />
+            <input style="width: 100%;" type="text" id="email" name="email" placeholder="Your Email"><br /><br />
+            <input style="width: 20%;" type="text" id="email" name="email" placeholder="Code+">
+            <input style="width: 77%;" type="text" id="email" name="email" placeholder="Phone Number"><br /><br />
+            <table width="100%">
+             <tr>
+                 <td>
+                                 <input class="mx-2" type="checkbox" id="terms" name="terms" value="acceptance">
+                 </td>
+                 <td>
+                                 <label style="font-size: 13px;" for="acceptance"> I do accept the Terms and Conditions of your site.</label><br>
+                 </td>
+             </tr>
+            </table>
+           
+            <br /><br /><button class="btn btn-danger col-12">Enter</button>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</div>
