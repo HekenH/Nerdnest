@@ -365,4 +365,11 @@ footer {
         color: black;
     }
 
+.classes img {
+    box-shadow: 2px 2px 20px 10px #D9AFD9;
+}
+table p {
+    text-shadow: 2px 2px 10px #ffc107;
+    font-size: 15px;
+}
     
