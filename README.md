@@ -24,7 +24,8 @@ Artificial Intelligence Benefits The Society:
 
 AI contributes to society by improving healthcare outcomes, fostering inclusivity, protecting the environment, enhancing public safety, driving economic growth, supporting social welfare programs, advancing scientific research, and providing personalized experiences. By gaining AI expertise through a course, you can contribute to the development of solutions that have a positive impact on society.
 
-Evelyn Parker (2 photo)
+Evelyn Parker (photo name 2)
+
 Evelyn Parker is deeply passionate about physics and teaching. She believes in instilling the same enthusiasm in her students, often bringing complex theories to life with vivid explanations and real-world examples. Her passion is infectious, making even the most challenging concepts seem exciting and accessible.
 
 
