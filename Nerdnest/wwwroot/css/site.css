@@ -303,7 +303,7 @@ footer {
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 900px;
 }
 
 .plate {
@@ -334,7 +334,7 @@ footer {
     left: 50%;
     transform: translate(4%, 30%);
     width: 500px;
-    height: 500px;
+    height: 600px;
     background-color: #212529f4;
     border-radius: 15px;
     border: thin #ffc107;
