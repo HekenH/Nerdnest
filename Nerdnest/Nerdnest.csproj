@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <Compile Remove="Pages\Educators\David.cs" />
+    <Compile Remove="Pages\Schedule.cs" />
   </ItemGroup>
 
   <ItemGroup>
