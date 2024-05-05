@@ -5,7 +5,7 @@
 namespace Nerdnest.Migrations
 {
     /// <inheritdoc />
-    public partial class AddCatalogue : Migration
+    public partial class Accounts : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

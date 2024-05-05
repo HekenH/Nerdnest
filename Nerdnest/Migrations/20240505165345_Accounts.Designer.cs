@@ -11,8 +11,8 @@ using Nerdnest.Data;
 namespace Nerdnest.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240504181745_AddCatalogue")]
-    partial class AddCatalogue
+    [Migration("20240505165345_Accounts")]
+    partial class Accounts
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
