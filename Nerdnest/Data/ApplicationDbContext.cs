@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Nerdnest.Model;
 
 namespace Nerdnest.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<User>
     {
         public ApplicationDbContext()
         {
@@ -11,8 +12,11 @@ namespace Nerdnest.Data
         }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) 
         {
-        
+
         }
-        public DbSet<Category> Category { get; set; }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
     }
 }

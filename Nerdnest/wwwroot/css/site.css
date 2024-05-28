@@ -209,7 +209,7 @@ img {
     }
 
 .menu {
-    height: 600px;
+    height: 300px;
 }
 .menu a{
     font-size: 15px;
@@ -223,22 +223,23 @@ img {
         /*background-color: red;*/
     }
     .menu table th:hover {
-        width: auto;
+        width: 200;
         height: 300px;
         margin: 25px;
         background-color: #663dff;
         background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
-        border-radius: 20px;
+        border-radius: 50px;
         font-size: 35px;
     }
     .menu p, .menu p:hover {
         justify-content: center;
-        width: 170px;
+        width: 200px;
         margin-left: 20%;
         /*background-color: blue;*/
     }
 .menu .container a {
     text-decoration: none;
+    width: 100%;
     color: #212529;
 
 }

@@ -1,5 +1,5 @@
 ﻿@page
-@model IndexModel
+@model Nerdnest.Pages.IndexModel
 @{
     ViewData["Title"] = "Online school";
 }
@@ -51,11 +51,44 @@
             </tr>
         </table>
 </div>
-<div class="container-fluid blur-bg">
-    <div class="image container">
-        <img src="~/assets/boarder.jpg" width="100%" height="500" alt="Foreground Image" />
+<div class="container-fluid blur-bg" style="height: 500px;">
+    <div id="carouselExampleIndicators" class="image container carousel slide" data-bs-ride="carousel">
+        <div class="image container carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="image carousel-item active">
+                <img src="~/assets/boarder.jpg" class="d-block w-100" height="500" alt="...">
+            </div>
+            <div class="image carousel-item">
+                <img src="~/assets/boarder2.jpg" class="d-block w-100" height="500" alt="...">
+            </div>
+            <div class="image carousel-item">
+                <img src="~/assets/boarder3.jpg" class="d-block w-100" height="500" alt="...">
+            </div>
+            <div class="image carousel-item">
+                <img src="~/assets/boarder4.jpg" class="d-block w-100" height="500" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+
+    @* <div class="image container">
+
+        <img src="~/assets/boarder.jpg" width="100%" height="500" alt="Foreground Image" />
+    </div> *@
 </div>
+
 <div class="bodypart">
 
     <div>
@@ -68,78 +101,36 @@
                     <table class="container">
                         <tr>
                             <th>
-                                <p>
-                                    A.I
-                                </p>
-                                <a asp-page="./Clas/Index">
-                                    Learn more
-                                    <span><i class="fa-2x fa-solid fa-square-arrow-up-right"></i></span>
-                                </a>
-                            </th>
-                            <th>
-                                <p>
-                                    C/C++
-                                </p>
                                 <a asp-page="./Clas/C++">
-                                    Learn more
-                                    <span><i class="fa-2x fa-solid fa-square-arrow-up-right"></i></span>
+                                <p>
+                                    Object Oriented Programming
+                                </p>
+                                    <button type="button" class="btn btn-info">Info <span><i class="fa-1x fa-solid fa-square-arrow-up-right"></i></span></button>
                                 </a>
                             </th>
                             <th>
+                                <a asp-page="./Clas/Physics">
                                 <p>
                                     Physics
                                 </p>
-                                <a asp-page="./Clas/Physics">
-                                    Learn more
-                                    <span><i class="fa-2x fa-solid fa-square-arrow-up-right"></i></span>
+                                    <button type="button" class="btn btn-info">Info <span><i class="fa-1x fa-solid fa-square-arrow-up-right"></i></span></button>
                                 </a>
                             </th>
                             <th>
+                                <a asp-page="./Clas/Calculusindex">
                                 <p>
                                     Calculus
                                 </p>
-                                <a asp-page="./Clas/Calculusindex">
-                                    Learn more
-                                    <span><i class="fa-2x fa-solid fa-square-arrow-up-right"></i></span>
+                                    <button type="button" class="btn btn-info">Info <span><i class="fa-1x fa-solid fa-square-arrow-up-right"></i></span></button>
                                 </a>
                             </th>
-                        </tr>
-
-                        <tr>
                             <th>
+                                <a asp-page="./Clas/ComputerEngineering">
                                 <p>
                                     Computer Engineering
                                 </p>
-                                <a asp-page="./Clas/ComputerEngineering">
-                                    Learn more
-                                    <span><i class="fa-2x fa-solid fa-square-arrow-up-right"></i></span>
-                                </a>
-                            </th>
-                            <th>
-                                <p>
-                                    UI/UX Design
-                                </p>
-                                <a asp-page="./Clas/UI">
-                                    Learn more
-                                    <span><i class="fa-2x fa-solid fa-square-arrow-up-right"></i></span>
-                                </a>
-                            </th>
-                            <th>
-                                <p>
-                                    3D Design
-                                </p>
-                                <a asp-page="./Clas/3ddesign">
-                                    Learn more
-                                    <span><i class="fa-2x fa-solid fa-square-arrow-up-right"></i></span>
-                                </a>
-                            </th>
-                            <th>
-                                <p>
-                                    Assembly
-                                </p>
-                                <a asp-page="./Clas/Assembly">
-                                    Learn more
-                                    <span><i class="fa-2x fa-solid fa-square-arrow-up-right"></i></span>
+                                    <button type="button" class="btn btn-info">Info <span><i class="fa-1x fa-solid fa-square-arrow-up-right"></i></span></button>
+                                    
                                 </a>
                             </th>
                         </tr>

@@ -7,15 +7,8 @@ namespace Nerdnest.Pages.Login
 {
     public class RegisteredModel : PageModel
     {
-        private readonly ApplicationDbContext _db;
-        public IEnumerable<Category> Categories { get; set; }
-        public RegisteredModel(ApplicationDbContext db)
-        {
-            _db=db;
-        }
         public void OnGet()
         {
-            Categories = _db.Category;
         }
     }
 }

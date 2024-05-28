@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity;
+@using Nerdnest.Model;
+
+@inject SignInManager<User> signInManager;
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -12,6 +17,7 @@
 </head>
 <body>
     <header>
+
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-black border-bottom box-shadow mb-3 border-light" style="margin-bottom: 0px !important;">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="~/assets/logo.png" height="50px" style="margin-right: 7px;"/>NerdNest</a>
@@ -27,16 +33,36 @@
                         <li class="nav-item">
                             <a class="nav-link text-grey" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-grey" asp-area="" asp-page="/Schedule">Schedule</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-grey" asp-area="" asp-page="/Profile">Profile</a>
-                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="btn btn-default nav-link"><a asp-page="/Login/Registration" class="text-light" style="text-decoration: none;"><span class="fa-solid fa-user"></span> Sign Up</a></li>
-                        <li class="btn btn-default nav-link"><a asp-page="/Login/Index" class="text-light" style="text-decoration: none;"><span class="fa-solid fa-right-to-bracket"></span> Login</a></li>
+                        @if (User.Identity!.IsAuthenticated)
+                        {
+                            <li>
+                                <div class="dropdown">
+                                    <button class="btn text-muted dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        @User.Identity.Name
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" asp-page="/Schedule">Schedule</a></li>
+                                        <li><a class="dropdown-item" asp-page="/Profile">Profile</a></li>
+
+                                        <li>
+                                            <form method="post" asp-page-handler="Logout" asp-page="/Login/Logout">
+                                                <button type="submit" class="btn btn-warning">Logout</button>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="btn btn-default nav-link"><a asp-page="/Login/Registration" class="text-light" style="text-decoration: none;"><span class="fa-solid fa-user"></span> Sign Up</a></li>
+                            <li class="btn btn-default nav-link"><a asp-page="/Login/Index" class="text-light" style="text-decoration: none;"><span class="fa-solid fa-right-to-bracket"></span> Login</a></li>
+
+                        }
+
+
                         <li>
                             <div class="dropdown mx-5">
                                 <button class="btn dropdown-toggle bg-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
@@ -96,3 +122,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+

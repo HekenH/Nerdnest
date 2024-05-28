@@ -14,17 +14,15 @@
             </div>
             <div class="container">
                     <label class="text-light" for="fname">Login</label><br />
-                    <input type="text" placeholder="Login">><br />
+                <input type="text" asp-for="Input.Login" placeholder="Login">><br />
 
                     <label class="text-light" for="lname">Password</label><br />
-                    <input type="password" placeholder="Password"><br /><br />
-                    <button type="submit" class="btn btn-danger col-12">Enter</button><br /><br />
-                    <table width="385px">
-                        <tr>
-                            <td><button class="btn btn-primary col-12"><i class="fa-brands fa-google mx-2"></i>Google</button></td>
-                            <td><button class="btn btn-primary col-10"><i class="fa-brands fa-square-facebook mx-2"></i>Facebook</button></td>
-                        </tr>
-                    </table>
+                <input type="password" asp-for="Input.Password" placeholder="Password"><br /><br />
+                <div class="form-group">
+                    <input style="width: 20px;height: 20px;" asp-for="Input.RememberMe" />
+                    <label asp-for="Input.RememberMe" class="px-2 text-light">Remember me.</label>
+                </div>
+                <button type="submit" class="btn btn-danger col-12 my-4">Enter</button><br /><br />
             </div>
          </div>
     </form>

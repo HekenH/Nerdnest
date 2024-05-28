@@ -4,35 +4,28 @@
 
 <div class="container-fluid d-flex justify-content-center loginbackground">
     <form method="post">
-        <div asp-validation-summary="All" class="text-danger"></div>
         <div style="margin-bottom: -170px;padding-left: 25%;text-decoration: underline;text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);">
-            <span asp-validation-for="@Model.NewAccount.Name" class="text-danger"></span><br />
-            <span asp-validation-for="@Model.NewAccount.LastName" class="text-danger"></span><br />
-            <span asp-validation-for="@Model.NewAccount.Email" class="text-danger"></span><br />
-            <span asp-validation-for="@Model.NewAccount.Phone" class="text-danger"></span><br />
-            <span asp-validation-for="@Model.NewAccount.Login" class="text-danger"></span><br />
-            <span asp-validation-for="@Model.NewAccount.Password" class="text-danger"></span><br />
+            <span asp-validation-for="Input.FirstName" class="text-danger"></span><br />
+            <span asp-validation-for="Input.LastName" class="text-danger"></span><br />
+            <span asp-validation-for="Input.Country" class="text-danger"></span><br />
+            <span asp-validation-for="Input.Email" class="text-danger"></span><br />
+            <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span><br />
+            <span asp-validation-for="Input.Login" class="text-danger"></span><br />
+            <span asp-validation-for="Input.Password" class="text-danger"></span><br />
         </div>
         <div class="container registration py-5">
             <p class="text-light d-flex justify-content-center">Registration</p>
             <div class="container text-light">
-                <input style="width: 49%;" asp-for="@Model.NewAccount.Name" placeholder="Name">
-                <input style="width: 48%;" asp-for="@Model.NewAccount.LastName" placeholder="Last Name"><br /><br />
-                <select name="Country" style="width: 100%;">
-                    <option value="Turkiye">Turkiye</option>
-                    <option value="England">England</option>
-                    <option value="Russia">Russia</option>
-                    <option value="Uzbekistan">Uzbekistan</option>
-                    <option value="Kirgzistan">Kirgizistan</option>
-                    <option value="Turkmenistan">Turkmenistan</option>
-                    <option value="Germany">Germany</option>
-                    <option value="USA">USA</option>
+                <input style="width: 49%;" asp-for="Input.FirstName" placeholder="Name">
+                <input style="width: 48%;" asp-for="Input.LastName" placeholder="Last Name"><br /><br />
+                <select asp-for="Input.Country" class="form-control" asp-items="Model.CountryList" style="width: 100%;">
+                    <option value="">Select Country</option>
                 </select>
                 <br /><br />
-                <input style="width: 100%;" type="email" asp-for="@Model.NewAccount.Email" placeholder="Your Email"><br /><br />
-                <input style="width: 100%;" asp-for="@Model.NewAccount.Phone" type="tel" placeholder="Phone Number"><br /><br />
-                <input style="width: 100%;" asp-for="@Model.NewAccount.Login" placeholder="Login"><br /><br />
-                <input style="width: 100%;" type="password" asp-for="@Model.NewAccount.Password" placeholder="Password"><br /><br />
+                <input style="width: 100%;" type="email" asp-for="Input.Email" placeholder="Your Email"><br /><br />
+                <input style="width: 100%;" type="tel" asp-for="Input.PhoneNumber" placeholder="Phone Number"><br /><br />
+                <input style="width: 100%;" asp-for="Input.Login" placeholder="Login"><br /><br />
+                <input style="width: 100%;" asp-for="Input.Password" type="password" placeholder="Password"><br /><br />
 
                 <table width="100%">
                  <tr>
