@@ -1,62 +1,293 @@
 ﻿@page
 @model Nerdnest.Pages.ScheduleModel
-@{
-    ViewData["Title"] = "Online school";
-}
-<div class="container-fluid classes">
+
+
+<div class="container*fluid">
     <div class="container text-center">
         <br />
         <h1 >
             Schedule
-            <div style="height: 1000px;">
-                <table class="container justify-content-center" >
-                    <tr bgcolor="lightgrey">
-                        <th width="100">Monday</th>
-                        <th width="100">Tuesday </th>
-                        <th width="100">Wednesday </th>
-                        <th width="100">Thursday </th>
-                        <th width="100">Friday </th>
-                        <th width="100">Saturday </th>
-                        <th width="100">Sunday </th>
-        
-                        </tr>
-                        <tr > 
-                        <td>---</td>
-                        <td>Calculus</td>
-                        <td>Assembly</td>
-                        <td>---</td>
-                        <td>3d design</td>
-                        <td>UI/UX design</td>
-                        <td>---</td>
-                        </tr>
-                          <td>Physics</td>
-                          <td>Calculus</td>
-                          <td>Assembly</td>
-                          <td>Computer Engineering</td>
-                          <td>UI/UX design</td>
-                          <td>A.I</td>
-                          <td>UI/UX design</td>
-                    </tr>
-                    <td>Physics</td>
-                    <td>A.I</td>
-                    <td>Computer Engineering</td>
-                    <td>Computer Engineering</td>
-                    <td>Assembly</td>
-                    <td>---</td>
-                    <td>Calculus</td>
-                    </tr>
+            <style>
+
+                .schedule th, td {
+                    border: 1px solid black;
+                    padding: 10px;
+                    text-align: center;
+                    width: 100px;
+                    background-color: white;
                     
-                    <td>A.I</td>
-                    <td>---</td>
-                    <td>---</td>
-                    <td>Physics</td>
-                    <td>3d design</td>
-                    <td>UI/UX design</td>
-                    <td>3d design</td>
-                    </tr>
+                }
 
+                .schedule th {
+                    background-color: #4AA0F6;
+                }
 
-                    </table>
+                .event {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: px;
+                    margin: 0x;
+                    height: 50px !important;
+                    border-radius: 50px;
+                    font-size: 18px;
+                }
+
+                .blue {
+                    background-color: #2196F3;
+                }
+
+                .red {
+                    background-color: #F44336;
+                }
+
+                .green {
+                    background-color: #4CAF50;
+                }
+            </style>
+            <div style="margin:40px; background-color: white; box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);">
+                <table width="100%" class="schedule align-content-center" style="font-size: 25px;">
+                    <thead>
+                        <tr>
+                            <th>Saat</th>
+                            <th>Pazartesi</th>
+                            <th>Salı</th>
+                            <th>Çarşamba</th>
+                            <th>Perşembe</th>
+                            <th>Cuma</th>
+                            <th>Cumartesi</th>
+                            <th>Pazar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Turkis Political History
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width: 100%;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content" style="width: 1000px;margin-left: -260px;">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body  text-center"><div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-3 col-xs-12">
+                                                        <div class="border b-c-orange">
+                                                            <span class="tits">Tarih Saat</span>
+                                                            <span class="text">Cuma 10:00 - 12:00</span>
+                                                            </div></div><div class="col-md-3 col-xs-12">
+                                                                <div class="border b-c-green">
+                                                                    <span class="tits">Ders Süresi</span>
+                                                                    <span class="text">120 dakika</span>
+                                                                    </div></div><div class="col-md-3 col-xs-12">
+                                                                        <div class="border b-c-red"><span class="tits">Kampüs</span>
+                                                                            <span class="text">Kavacık Yerleşkesi</span></div>
+                                                                            </div>
+                                                                            <div class="col-md-3 col-xs-12"><div class="border b-c-blue">
+                                                                                <span class="tits">Bina</span><span class="text">Kavacık Yerleşkesi</span>
+                                                                                </div>
+                                                                                </div>
+                                                                                <div class="clearfix">
+                                                                                    </div>
+                                                                                    </div>
+                                                                                    <div class="row b-bottom-gray">
+                                                                                        <div class="col-md-3 col-xs-12 p-15">
+                                                                                            <span class="tits">Öğretim Elemanı</span>
+                                                                                            <span class="text p-0-15">Prof. Dr. BURAK KÜNTAY</span>
+                                                                                            </div><div class="col-md-3 col-xs-12">
+                                                                                                <span class="tits p-0-15">Derslik</span>
+                                                                                                <span class="text p-0-15">Konferans Salonu  (K17)</span>
+                                                                                                </div><div class="col-md-3 col-xs-12">
+                                                                                                    <span class="tits p-0-15">Program</span></div>
+                                                                                                        <div class="col-md-3 col-xs-12">
+                                                                                                            <span class="tits p-0-15">Öğrenci Sayısı</span>
+                                                                                                            <span class="text p-0-15">45</span>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-3 col-xs-12">
+                                                                                                            <span class="tits p-0-15">Öğretim Türü</span>
+                                                                                                            <span class="text p-0-15">Normal Öğretim</span>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-3 col-xs-12">
+                                                                                                            <span class="tits p-0-15">Derslik Kapasitesi</span>
+                                                                                                            <span class="text p-0-15">150</span>
+                                                                                                        </div><div class="col-md-3 col-xs-12">
+                                                                                                            <span class="tits p-0-15">Sınıf</span>
+                                                                                                            <span class="text p-0-15">1</span>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-3 col-xs-12">
+                                                                                                            <span class="tits p-0-15">Şube</span>
+                                                                                                            <span class="text p-0-15">1</span>
+                                                                                                        </div>
+                                                                                                        <div class="clearfix"></div>
+                                                                                                    </div>
+                                                                                                    </div>
+                                                                                                    </div>
+                                            <div class="modal-footer justify-content-center">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Link</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13:00</td>
+                            <td></td>
+                            <td>
+                                <button type="button" class="btn btn-info">
+                                    <div class="">
+                                        Calculus II
+                                    </div>
+                                </button>
+                                
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary">
+                                    <div>
+                                        Physics II
+                                    </div>
+                                </button>
+                                
+                            </td>
+                            <td></td>
+                            <td>
+                                <button type="button" class="btn btn-info">
+                                    <div class="">
+                                        Calculus II
+                                    </div>
+                                </button>
+                                
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>14:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>15:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <button type="button" class="btn btn-primary">
+                                    <div>
+                                        Physics II
+                                    </div>
+                                </button>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>16:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>17:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>18:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <button type="button" class="btn btn-success">
+                                    <div class="">
+                                        <span class=""> E-Commerce</span>
+                                    </div>
+                                </button>
+                                
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>19:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>20:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
                     
                 
                 
