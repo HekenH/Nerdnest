@@ -20,6 +20,12 @@
 
   <ItemGroup>
     <Content Remove="Pages\Login\Logout.cshtml" />
+    <Content Remove="Pages\NewFolder\Payment.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Pages\NewFolder\htmlpage.html" />
+    <None Remove="Pages\Payment\htmlpage.html" />
   </ItemGroup>
 
   <ItemGroup>

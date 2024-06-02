@@ -12,8 +12,8 @@ using Nerdnest.Data;
 namespace Nerdnest.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240526165147_Delta")]
-    partial class Delta
+    [Migration("20240601215841_delta")]
+    partial class delta
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
