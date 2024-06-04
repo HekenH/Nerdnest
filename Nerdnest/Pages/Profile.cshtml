@@ -28,10 +28,9 @@
                             <input type="text" class="form-control" asp-for="PhoneNumber" value="@Model.Profile.PhoneNumber">
                             <span asp-validation-for="PhoneNumber" class="text-danger"></span>
                             </div>
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <label class="labels">Email:</label>
-                            <input type="text" class="form-control" asp-for="Email" value="@Model.Profile.Email">
-                            <span asp-validation-for="Email" class="text-danger"></span>
+                            <span class="text-primary"><i class="fa-solid fa-check"></i>@Model.Profile.Email </span>
                         </div>
                         
                     </div>

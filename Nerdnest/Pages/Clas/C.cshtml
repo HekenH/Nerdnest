@@ -24,7 +24,7 @@
     <table class="container my-5" width="100%">
         <tr>
             <th>
-                <img src="~/assets/C++1.jpg" width="600px" style="border-radius: 15px;" />
+                <img src="~/assets/C1.jpg" width="600px" style="border-radius: 15px;" />
             </th>
             <th>
                 <h5 style="text-align:center;" class="mr-5">Performance and Efficiency:</h5>
@@ -42,12 +42,12 @@
                 </p>
             </th>
             <th>
-                <img src="~/assets/C++2.jpg" width="500px" style="border-radius: 15px; margin-left: 20%" />
+                <img src="~/assets/C2.jpg" width="500px" style="border-radius: 15px; margin-left: 20%" />
             </th>
         </tr>
         <tr>
             <th>
-                <img src="~/assets/C++3.jpg" width="500px" style="border-radius: 15px;" />
+                <img src="~/assets/C3.jpg" width="500px" style="border-radius: 15px;" />
             </th>
             <th>
                 <h5 style="text-align:center;" class="my-5">Versatility</h5>
@@ -64,13 +64,20 @@
                 </p>
             </th>
             <th>
-                <img src="~/assets/C++4.jpg" width="500px" style="border-radius: 15px; margin-left: 20%" />
+                <img src="~/assets/C4.jpg" width="500px" style="border-radius: 15px; margin-left: 20%" />
             </th>
         </tr>
     </table>
     <br /><br />
     <div class="container">
-        <button class="btn btn-primary col-12" style="height: 50px; font-size: 20px;">Take the course</button>
+        @if (User.Identity!.IsAuthenticated)
+        {
+            <a asp-page="/Payment/Payment"><button class="btn btn-primary col-12" style="height: 50px; font-size: 20px;">Take the course</button></a>
+        }
+        else
+        {
+            <a asp-page="/Login/Index"><button class="btn btn-primary col-12" style="height: 50px; font-size: 20px;">Take the course</button></a>
+        }
     </div><br /><br /><br />
 
 

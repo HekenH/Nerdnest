@@ -73,7 +73,14 @@
     </table>
     <br /><br />
     <div class="container">
-        <button class="btn btn-primary col-12" style="height: 50px; font-size: 20px;">Take the course</button>
+        @if (User.Identity!.IsAuthenticated)
+        {
+            <a asp-page="/Payment/Payment"><button class="btn btn-primary col-12" style="height: 50px; font-size: 20px;">Take the course</button></a>
+        }
+        else
+        {
+            <a asp-page="/Login/Index"><button class="btn btn-primary col-12" style="height: 50px; font-size: 20px;">Take the course</button></a>
+        }
     </div><br /><br /><br />
 
 

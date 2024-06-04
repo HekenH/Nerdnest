@@ -1,28 +1,30 @@
 ﻿@page
 @model Nerdnest.Pages.Login.RegisteredModel
 
-<div class="container p-3">
-    <div class="row pt-4">
-        <div class="col-6">
-            <h2 class="text-primary">Category List</h2>
-        </div>
-    </div>
-    <br /><br />
+<div class="container-fluid d-flex justify-content-center loginbackground">
+    <form method="post">
+        <div class="container plate py-5">
+            <p class="text-light d-flex justify-content-center">Verify your email</p>
+            @* <div class="btn-group-sm d-flex justify-content-center m-3 mt-4">
+            <button type="button" class="btn btn-outline-primary">Student</button>
+            <a class="btn btn-primary" asp-page="/Login/Professors">Professor</a>
+            </div> *@
+            <div class="container">
+                <label class="text-light" for="fname">Veification Code</label><br />
+                <input type="text" asp-for="@Model.Verification" placeholder="Your code:"><br />
+                <button type="submit" class="btn btn-danger col-12 my-4">Enter</button><br /><br />
 
-    <table class="table table-bordered table-striped">
-        <thead>
-            <tr>
-                <th>
-                    Name
-                </th>
-                <th>
-                    Last Name
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            </tr>
-        </tbody>
-    </table>
+
+                <label class="text-light">@Model.Message</label>
+            </div>
+        </div>
+    </form>
+
+
+
+
+
+
+
+
 </div>

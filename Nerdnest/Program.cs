@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Nerdnest.Controller;
 using Nerdnest.Data;
 using Nerdnest.Model;
 
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages()
     .AddRazorRuntimeCompilation();
+builder.Services.AddTransient<IEmailSender, EmailSender>();
 builder.Services.AddAuthentication().AddCookie(IdentityConstants.ApplicationScheme);
 builder.Services.AddIdentityCore<User>(options =>
 {

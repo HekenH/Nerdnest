@@ -10,15 +10,7 @@
         <table>
             <tr>
                 <th>
-               
-                    <a asp-page="./Payment/Payment">
-                        <p>
-                            Payment
-                        </p>
-                        <button type="button" class="btn btn-info">Info <span><i class="fa-1x fa-solid fa-square-arrow-up-right"></i></span></button>
-                    </a>
-                </th>
-                    <p class="text-light col-md-6 text-center">
+                    <p class="text-light col-md-6 text-center" style="margin-top: 50px;">
                         <span>
                             "Empower Your Learning Journey: Accessible, Engaging, Online Education."
                         </span>
@@ -28,9 +20,64 @@
                     
 
                     <div class="btn-group">
-                        <button type="button" class="btn text-light">University</button>
-                        <button type="button" class="btn text-light">Faculties</button>
-                        <button type="button" class="btn text-light">Educational programs</button>
+
+                        @* ---------------------------------------- *@
+                        <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                            University
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModal4Label" aria-hidden="true" style="width: 100%;">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="width: 1000px;margin-left: -260px;">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModal4Label"></h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body  text-center">
+                                        <div class="container">
+                                            <h2>Beykoz University</h2>
+                                            <p>The university is a prestigious institution known for its excellence in education, research, and innovation. It offers a wide range of undergraduate and postgraduate programs across various disciplines, fostering a vibrant academic community and a culture of critical thinking and creativity. The campus is equipped with state-of-the-art facilities and provides a supportive environment for students to achieve their full potential.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        @* ---------------------------------------- *@
+
+
+                        <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                            Educational programs
+                        </button>
+                        
+                        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModal6Label" aria-hidden="true" style="width: 100%;">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="width: 1000px;margin-left: -260px;">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModal4Label"></h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body  text-center">
+                                        <div class="container">
+                                            <p>Join us for an exciting journey into the world of robotics engineering! Our Robotics Engineering Summer Camp is designed for aspiring young engineers aged 12-16 who are eager to explore the fascinating field of robotics. Through a combination of hands-on activities, interactive workshops, and guided projects, participants will gain valuable skills in programming, electronics, and mechanical engineering.</p>
+                                            <h5>Key Highlights:</h5>
+                                            <ul>
+                                                <li>Hands-On Learning: Participants will work with state-of-the-art robotics kits, learning to build and program their own robots from scratch.</li>
+                                                <li>Expert Instruction: Our experienced instructors will provide personalized guidance and support, ensuring that every participant receives the attention they need to succeed.</li>
+                                                <li>Project-Based Approach: Campers will collaborate on exciting projects, such as designing autonomous vehicles and creating robotic arms, putting their skills to the test in real-world applications.</li>
+                                                <li>Fun and Engaging Activities: In addition to technical sessions, campers will enjoy team challenges, robot competitions, and field trips to robotics labs and companies.</li>
+                                                <li>Future Opportunities: This camp provides a solid foundation for students interested in pursuing further studies or careers in robotics, engineering, or related fields.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        @* ---------------------------------------- *@
                     </div>
                 </th>
             </tr>
@@ -43,12 +90,104 @@
 <div class="layer ps-5">
         <table class="container justify-content-center">
             <tr>
-                <td><button type="button" class="btn col-md-8">Groups</button></td>
-                <td><button type="button" class="btn col-md-8">Courses</button></td>
-                <td><button type="button" class="btn col-md-8">Tutors</button></td>
-                <td><button type="button" class="btn col-md-8">Programming</button></td>
-                <td><button type="button" class="btn col-md-8">Tarifs</button></td>
-                <td><button type="button" class="btn col-md-8">F.A.Q</button></td>
+            <td>
+                <button type="button" class="btn col-md-8" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                    Groups
+                </button>
+
+                <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModal7Label" aria-hidden="true" style="width: 100%;">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="width: 1000px;margin-left: -260px;">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModal4Label"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body  text-center">
+                                <div class="container">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                
+                
+                
+                
+                
+                </td>
+            <td>
+                <button type="button" class="btn col-md-8" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                    Courses
+                </button>
+
+                <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModal8Label" aria-hidden="true" style="width: 100%;">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="width: 1000px;margin-left: -260px;">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModal4Label"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body  text-center">
+                                <div class="container">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                
+                
+                </td>
+            <td>
+                <button type="button" class="btn col-md-8" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+                    Tutors
+                </button>
+
+                <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModal9Label" aria-hidden="true" style="width: 100%;">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="width: 1000px;margin-left: -260px;">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModal4Label"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body  text-center">
+                                <div class="container">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                
+                
+                </td>
+
+            <td>
+                <button type="button" class="btn col-md-8" data-bs-toggle="modal" data-bs-target="#exampleModal10">
+                    F.A.Q
+                </button>
+
+                <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModal10Label" aria-hidden="true" style="width: 100%;">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="width: 1000px;margin-left: -260px;">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModal4Label"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body  text-center">
+                                <div class="container">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                
+                
+                
+                
+                </td>
             </tr>
         </table>
 </div>
@@ -102,7 +241,7 @@
                     <table class="container">
                         <tr>
                             <th>
-                                <a asp-page="./Clas/C++">
+                                <a asp-page="./Clas/C">
                                 <p>
                                     Object Oriented Programming
                                 </p>
@@ -304,6 +443,15 @@
         </div>
     </div>
    
+
+
+  @*   Modals -----------------------------------  *@
+
+    
+
+
+
+
 
 
 
